@@ -37,3 +37,26 @@ ethiopia-fi-forecast/
 ├── data_enrichment_log.md
 ├── requirements.txt
 └── README.md
+
+## Task 1: Data Exploration and Enrichment
+
+Task 1 examines the unified Ethiopia financial inclusion dataset and prepares it for modeling.
+
+The analysis includes:
+
+- Dataset structure and record-type analysis
+- Indicator and temporal coverage assessment
+- Event and impact-link validation
+- Missing-value and documentation analysis
+- Collector and collection-date corrections
+- Addition of the 2011 Account Ownership baseline
+- Export of a validated enriched dataset
+
+### Task 1 Outputs
+
+- `notebooks/task_1_data_exploration_enrichment.ipynb`
+- `data/processed/ethiopia_fi_enriched.csv`
+- `data/processed/ethiopia_fi_enriched.xlsx`
+- `docs/data_enrichment_log.md`
+
+The enriched dataset contains 58 records and supports Account Ownership analysis from 2011 through 2024.
