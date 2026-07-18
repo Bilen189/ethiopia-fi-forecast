@@ -34,7 +34,8 @@ ethiopia-fi-forecast/
 │   └── figures/
 ├── src/
 ├── tests/
-├── data_enrichment_log.md
+├── docs/
+│   └──data_enrichment_log.md
 ├── requirements.txt
 └── README.md
 
