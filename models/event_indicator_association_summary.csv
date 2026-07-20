@@ -1,0 +1,15 @@
+event_id,event_name,event_category,event_date,pillar,related_indicator,impact_direction,impact_magnitude,lag_months,confidence,weighted_effect,evidence_basis
+EVT_0008,EthioPay Instant Payment System Launch,infrastructure,,USAGE,USG_P2P_COUNT,increase,,6.0,medium,,literature
+EVT_0004,Fayda Digital ID Program Rollout,infrastructure,,ACCESS,ACC_OWNERSHIP,increase,,24.0,medium,,literature
+EVT_0004,Fayda Digital ID Program Rollout,infrastructure,,GENDER,GEN_GAP_ACC,decrease,,24.0,medium,,literature
+EVT_0005,Foreign Exchange Liberalization,policy,,AFFORDABILITY,AFF_DATA_INCOME,increase,,3.0,high,,empirical
+EVT_0007,M-Pesa EthSwitch Integration,partnership,,USAGE,USG_MPESA_ACTIVE,increase,,3.0,medium,,literature
+EVT_0007,M-Pesa EthSwitch Integration,partnership,,USAGE,USG_P2P_COUNT,increase,,3.0,medium,,literature
+EVT_0003,M-Pesa Ethiopia Launch,product_launch,,ACCESS,ACC_MM_ACCOUNT,increase,,6.0,medium,,theoretical
+EVT_0003,M-Pesa Ethiopia Launch,product_launch,,USAGE,USG_MPESA_USERS,increase,,3.0,high,,empirical
+EVT_0002,Safaricom Ethiopia Commercial Launch,market_entry,,ACCESS,ACC_4G_COV,increase,,12.0,medium,,empirical
+EVT_0002,Safaricom Ethiopia Commercial Launch,market_entry,,AFFORDABILITY,AFF_DATA_INCOME,decrease,,12.0,medium,,literature
+EVT_0010,Safaricom Ethiopia Price Increase,pricing,,AFFORDABILITY,AFF_DATA_INCOME,increase,,1.0,high,,empirical
+EVT_0001,Telebirr Launch,product_launch,,ACCESS,ACC_OWNERSHIP,increase,,12.0,medium,,literature
+EVT_0001,Telebirr Launch,product_launch,,USAGE,USG_P2P_COUNT,increase,,6.0,medium,,empirical
+EVT_0001,Telebirr Launch,product_launch,,USAGE,USG_TELEBIRR_USERS,increase,,3.0,high,,empirical
