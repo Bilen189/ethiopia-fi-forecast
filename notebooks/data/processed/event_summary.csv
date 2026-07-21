@@ -1,0 +1,9 @@
+event_name,event_category,number_of_indicators,average_effect,total_effect,average_confidence
+Foreign Exchange Liberalization,policy,1,22.5,22.5,1.0
+Telebirr Launch,product_launch,3,11.25,22.5,0.8333333333333334
+Safaricom Ethiopia Commercial Launch,market_entry,2,9.84375,19.6875,0.75
+M-Pesa EthSwitch Integration,partnership,2,7.03125,14.0625,0.75
+EthioPay Instant Payment System Launch,infrastructure,1,8.4375,8.4375,0.75
+Fayda Digital ID Program Rollout,infrastructure,2,4.21875,8.4375,0.75
+Safaricom Ethiopia Price Increase,pricing,1,7.5,7.5,1.0
+M-Pesa Ethiopia Launch,product_launch,2,2.8125,2.8125,0.875
