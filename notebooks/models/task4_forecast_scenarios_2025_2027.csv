@@ -1,0 +1,7 @@
+target,year,baseline_forecast,lower_95_percent,upper_95_percent,naive_baseline,model_selected,event_adjustment_pp,contributing_event_count,contributing_events,base_scenario,forecast_horizon,scenario_margin_pp,optimistic_scenario,pessimistic_scenario
+Account Ownership Rate,2025,54.82,47.03,62.6,49.0,Linear trend,0.0,0,,54.82,1,3.0,57.82,51.82
+Account Ownership Rate,2026,57.66,49.55,65.77,49.0,Linear trend,0.0,0,,57.66,2,4.0,61.66,53.66
+Account Ownership Rate,2027,60.51,52.04,68.97,49.0,Linear trend,0.0,0,,60.51,3,5.0,65.51,55.51
+Digital Payment Usage,2025,11.03,3.12,18.95,9.45,Linear trend,0.0,0,,11.03,1,3.0,14.03,8.03
+Digital Payment Usage,2026,12.62,3.05,22.18,9.45,Linear trend,0.0,0,,12.62,2,4.0,16.62,8.62
+Digital Payment Usage,2027,14.2,2.8,25.6,9.45,Linear trend,0.0,0,,14.2,3,5.0,19.2,9.2

@@ -1,0 +1,3 @@
+target,observation_count,first_year,last_year,MAE_in_sample,RMSE_in_sample,R_squared_in_sample,model_selected
+Account Ownership Rate,5,2011,2024,2.19926739926741,2.3389518957637394,0.9699676330111068,Linear trend
+Digital Payment Usage,2,2021,2024,1.816324868286756e-13,1.8163302972420883e-13,1.0,Linear trend

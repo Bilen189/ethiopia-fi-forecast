@@ -1,0 +1,4 @@
+event_name,event_category,forecast_target,related_indicator,impact_direction,impact_magnitude,weighted_effect,lag_months,confidence,evidence_basis
+Fayda Digital ID Program Rollout,infrastructure,Account Ownership Rate,ACC_OWNERSHIP,increase,,0.0,24.0,medium,literature
+M-Pesa Ethiopia Launch,product_launch,Digital Payment Usage,ACC_MM_ACCOUNT,increase,,0.0,6.0,medium,theoretical
+Telebirr Launch,product_launch,Account Ownership Rate,ACC_OWNERSHIP,increase,,0.0,12.0,medium,literature
