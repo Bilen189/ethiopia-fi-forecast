@@ -43,6 +43,7 @@ from dashboard.data_loader import (  # noqa: E402
     get_targets,
     latest_indicator_value,
     load_enriched_data,
+    get_p2p_atm_crossover_series,
 )
 
 from dashboard.views import (
@@ -50,6 +51,10 @@ from dashboard.views import (
     render_forecasts_page,
     render_inclusion_projections_page,
     render_trends_page,
+)
+
+from dashboard.data_explorer import (
+    render_data_explorer_page,
 )
 
 # -------------------------------------------------------------------
@@ -167,6 +172,10 @@ mobile_money = get_mobile_money_series(
 )
 
 digital_payments = get_digital_payment_series(
+    observations
+)
+
+p2p_atm_crossover = get_p2p_atm_crossover_series(
     observations
 )
 
@@ -338,8 +347,14 @@ if selected_page == "Overview":
         digital_payments
     )
 
-    metric_1, metric_2, metric_3, metric_4 = (
-        st.columns(4)
+    metric_1, metric_2, metric_3, metric_4, metric_5 = (
+        st.columns(5)
+    )
+
+    latest_crossover, crossover_year = (
+        latest_indicator_value(
+            p2p_atm_crossover
+        )
     )
 
     with metric_1:
@@ -423,6 +438,25 @@ if selected_page == "Overview":
             help=(
                 "Additional percentage points required to "
                 "reach the 60% Account Ownership target."
+            ),
+        )
+
+    with metric_5:
+        st.metric(
+            label=(
+                "P2P/ATM Crossover"
+                if crossover_year is None
+                else f"P2P/ATM Crossover ({crossover_year})"
+            ),
+            value=(
+                "N/A"
+                if latest_crossover is None
+                else f"{latest_crossover:.2f}×"
+            ),
+            help=(
+                "Ratio of interoperable P2P transfers to ATM "
+                "cash withdrawals. Values above 1 indicate that "
+                "P2P transfers have exceeded ATM withdrawals."
             ),
         )
 
@@ -730,9 +764,6 @@ elif selected_page == "Inclusion Projections":
 
 
 elif selected_page == "Data Explorer":
-    st.header("Data Explorer")
-
-    st.info(
-        "The complete data explorer, dashboard validation and "
-        "final documentation will be added in Commit 3."
+    render_data_explorer_page(
+        financial_data
     )

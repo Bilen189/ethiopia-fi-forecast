@@ -623,6 +623,26 @@ def get_digital_payment_series(
         ],
     )
 
+def get_p2p_atm_crossover_series(
+    observations: pd.DataFrame,
+) -> pd.DataFrame:
+    """
+    Extract P2P-to-ATM crossover ratio observations.
+    """
+    return select_indicator(
+        observations,
+        indicator_codes=[
+            "USG_P2P_ATM_RATIO",
+            "P2P_ATM_CROSSOVER",
+            "P2P_ATM_RATIO",
+        ],
+        keywords=[
+            "p2p atm crossover",
+            "p2p to atm ratio",
+            "p2p/atm",
+            "p2p transfers compared with atm",
+        ],
+    )
 
 def calculate_growth_table(
     indicator_data: pd.DataFrame,
