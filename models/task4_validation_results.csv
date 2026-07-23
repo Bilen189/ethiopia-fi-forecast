@@ -1,0 +1,11 @@
+validation_check,passed
+access_target_defined,True
+usage_target_handled,True
+forecast_years_are_2025_to_2027,True
+baseline_forecast_created,True
+confidence_intervals_created,True
+event_adjustments_created,True
+three_scenarios_created,True
+scenario_order_is_valid,True
+forecasts_within_0_to_100,True
+event_sources_retained,True
