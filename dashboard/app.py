@@ -45,6 +45,12 @@ from dashboard.data_loader import (  # noqa: E402
     load_enriched_data,
 )
 
+from dashboard.views import (
+    render_event_impacts_page,
+    render_forecasts_page,
+    render_inclusion_projections_page,
+    render_trends_page,
+)
 
 # -------------------------------------------------------------------
 # Page configuration
@@ -700,49 +706,33 @@ if selected_page == "Overview":
 
 
 # -------------------------------------------------------------------
-# Placeholder pages for future commits
+# Analytical pages
 # -------------------------------------------------------------------
 
 elif selected_page == "Trends":
-    st.header("Trends")
-
-    st.info(
-        "The interactive Trends page will be implemented "
-        "in Commit 2."
+    render_trends_page(
+        financial_data
     )
 
 
 elif selected_page == "Event Impacts":
-    st.header("Event Impacts")
-
-    st.info(
-        "The event-impact visualizations will be implemented "
-        "in Commit 2."
+    render_event_impacts_page(
+        financial_data
     )
 
 
 elif selected_page == "Forecasts":
-    st.header("Forecasts")
-
-    st.info(
-        "The interactive forecasting page will be implemented "
-        "in Commit 2."
-    )
+    render_forecasts_page()
 
 
 elif selected_page == "Inclusion Projections":
-    st.header("Inclusion Projections")
-
-    st.info(
-        "The scenario and policy-target projections will be "
-        "implemented in Commit 2."
-    )
+    render_inclusion_projections_page()
 
 
 elif selected_page == "Data Explorer":
     st.header("Data Explorer")
 
     st.info(
-        "Downloads and the full data explorer will be "
-        "implemented in Commit 3."
+        "The complete data explorer, dashboard validation and "
+        "final documentation will be added in Commit 3."
     )
