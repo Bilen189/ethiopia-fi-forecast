@@ -61,3 +61,54 @@ The analysis includes:
 - `docs/data_enrichment_log.md`
 
 The enriched dataset contains 58 records and supports Account Ownership analysis from 2011 through 2024.
+
+## Interactive Dashboard
+
+The Streamlit dashboard allows users to explore Ethiopia's financial
+inclusion data, event impacts and forecasts for 2025–2027.
+
+### Dashboard Features
+
+- Overview metrics for Account Ownership and mobile-money penetration
+- P2P/ATM crossover indicator where data is available
+- Interactive financial inclusion trends
+- Date-range and indicator filters
+- Event timeline and event-indicator association matrix
+- Baseline forecasts with approximate 95% prediction intervals
+- Optimistic, base and pessimistic scenario projections
+- Progress toward the 60% Account Ownership target
+- Filterable data explorer
+- CSV download functionality
+
+### Run Locally
+
+Create and activate a virtual environment:
+
+```powershell
+python -m venv venv
+venv\Scripts\Activate.ps1
+
+## Task 5: Interactive Dashboard
+
+The project includes a Streamlit dashboard for exploring Ethiopia's
+financial inclusion indicators, event impacts and forecasts.
+
+### Features
+
+- Overview metrics for Account Ownership and mobile-money adoption
+- Interactive indicator trends
+- Date-range and indicator filters
+- Event timeline and event-indicator association matrix
+- Forecasts for 2025–2027 with prediction intervals
+- Optimistic, base and pessimistic scenarios
+- Progress toward the 60% Account Ownership target
+- Filterable Data Explorer
+- CSV download functionality
+
+### Run Locally
+
+Create and activate a virtual environment:
+
+```powershell
+python -m venv venv
+venv\Scripts\Activate.ps1

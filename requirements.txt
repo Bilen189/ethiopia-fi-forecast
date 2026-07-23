@@ -10,3 +10,4 @@ ipykernel
 seaborn
 pytest
 streamlit
+statsmodels
